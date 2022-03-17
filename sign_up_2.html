@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="/multi-step-form.css">
+     <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+    <title>FunMatch</title>
+
+
+    <script>
+    $(document).ready(function(){
+
+      var multipleCancelButton = new Choices('#choices-multiple-remove-button', 
+      { removeItemButton: true,
+      maxItemCount:5,
+      searchResultLimit:5,
+      renderChoiceLimit:5
+      });
+      });
+      </script>
+
+
+
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">FunMatch</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarNav">
+          <ul class="navbar-nav ml-auto ">
+            <li class="nav-item active ">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html#how_it_works_sec">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#testimonial_sec">Testimonial</a>
+              </li>
+            </ul>
+  
+          <ul class="navbar-nav ml-auto">
+            <li >
+              <button class=" btn btn-primary rounded-pill">
+                <a href="sign_up.html"><span>Get started</span> </a>
+              </button>
+              <button class="btn btn-primary rounded-pill">
+                <a href="login.html"><span>Log in </span> </a>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 col-xl-9 mx-auto">
+            <div class="card flex-row my-5 border-0 shadow rounded-3 overflow-hidden">
+              <div class="card-img-left d-none d-md-flex">
+                <!-- Background image for card set in CSS! -->
+              </div>
+              <div class="card-body p-4 p-sm-5">
+
+                <h5 class="card-title text-center mb-5 fw-light fs-5">Choose your prefrences</h5>
+                <h2>You perfer working at </h2>
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadioInline1">Night</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadioInline2">Day</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input type="radio" id="customRadioInline3" name="customRadioInline2" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadioInline3">Online</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input type="radio" id="customRadioInline4" name="customRadioInline2" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadioInline4">Offline</label>
+                </div>
+
+                <h2>List your Skills</h2>
+              
+                <div class="row d-flex justify-content-center mt-100">
+                  <div class="col-md-6"> <select id="choices-multiple-remove-button" placeholder="Select upto 5 tags" multiple>
+                          <option value="HTML">HTML</option>
+                          <option value="Jquery">Jquery</option>
+                          <option value="CSS">CSS</option>
+                          <option value="Bootstrap 3">Bootstrap 3</option>
+                          <option value="Bootstrap 4">Bootstrap 4</option>
+                          <option value="Java">Java</option>
+                          <option value="Javascript">Javascript</option>
+                          <option value="Angular">Angular</option>
+                          <option value="Python">Python</option>
+                          <option value="Hybris">Hybris</option>
+                          <option value="SQL">SQL</option>
+                          <option value="NOSQL">NOSQL</option>
+                          <option value="NodeJS">NodeJS</option>
+                      </select> </div>
+              </div>
+
+                <h2>Would you like to be the team leader? </h2>
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input type="radio" id="customRadioInline5" name="customRadioInline3" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadioInline5">Yes</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input type="radio" id="customRadioInline6" name="customRadioInline3" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadioInline6">No</label>
+                </div>
+
+
+                <div class="d-grid mb-2 mt-2 ">
+                  <button class="btn btn-lg btn-primary btn-login fw-bold text-uppercase" type="submit">Complete Registeration</button>
+                </div>
+
+       
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+   
+
+
+
+
+
+<footer id="sticky-footer" class="flex-shrink-0 py-4 bg-dark text-white-50">
+
+    
+      
+ 
+  
+    <div class="container text-center">
+     
+      <small>Copyright &copy; Your Website</small>
+    </div>
+  </footer>
+      
+
+
+
+  
+ 
+  </body>
+</html>
